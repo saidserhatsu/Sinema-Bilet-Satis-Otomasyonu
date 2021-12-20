@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sinema_Bilet_Satis_Otomasyonu
 {
-    public partial class Giris : Form
+    public partial class BiletSatisEkrani : Form
     {
-        public Giris()
+        public BiletSatisEkrani()
         {
             InitializeComponent();
         }

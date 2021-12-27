@@ -16,5 +16,10 @@ namespace Sinema_Bilet_Satis_Otomasyonu
         {
             InitializeComponent();
         }
+
+        private void BiletSatisEkrani_Load(object sender, EventArgs e)
+        {
+            label1.Text = GirisEkrani.id.ToString();
+        }
     }
 }

@@ -18,7 +18,7 @@ namespace Sinema_Bilet_Satis_Otomasyonu
         OleDbDataAdapter Veri_Adaptor;
         DataSet Veri_Set;
         OleDbCommand Veri_Komutu;
-        OleDbDataReader Veri_Oku;
+        //OleDbDataReader Veri_Oku;
         public KayitEkrani()
         {
             InitializeComponent();
@@ -30,11 +30,16 @@ namespace Sinema_Bilet_Satis_Otomasyonu
             Veritabani_Baglanti.Open();
             
             Veri_Komutu.Connection = Veritabani_Baglanti;
-            Veri_Komutu.CommandText = "Insert into Kullanicilar(ad,soyad,gmail,sifre,gizlisoru,gizliyanit) values (" +"'"+ textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + comboBox1.Text + "','" + textBox5.Text +"')";
+            Veri_Komutu.CommandText = "Insert into Kullanicilar(ad,soyad,email,sifre,gizlisoru,gizliyanit) values (" +"'"+ textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + comboBox1.Text + "','" + textBox5.Text +"')";
             
             Veri_Komutu.ExecuteNonQuery();
             
             Veritabani_Baglanti.Close();
+        }
+
+        private void KayitEkrani_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

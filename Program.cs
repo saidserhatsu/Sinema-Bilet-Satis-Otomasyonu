@@ -16,7 +16,7 @@ namespace Sinema_Bilet_Satis_Otomasyonu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GirisEkrani());
+            Application.Run(new YoneticiEkrani());
         }
     }
 }

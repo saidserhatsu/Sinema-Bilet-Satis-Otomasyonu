@@ -16,5 +16,10 @@ namespace Sinema_Bilet_Satis_Otomasyonu
         {
             InitializeComponent();
         }
+
+        private void YoneticiEkrani_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

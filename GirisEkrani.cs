@@ -14,8 +14,8 @@ namespace Sinema_Bilet_Satis_Otomasyonu
     public partial class GirisEkrani : Form
     {
         OleDbConnection Veritabani_Baglanti = new OleDbConnection("Provider=Microsoft.ACE.Oledb.12.0;Data Source=biletsatisotomasyonuDB.accdb");
-        OleDbDataAdapter Veri_Adaptor;
-        DataSet Veri_Set;
+        //OleDbDataAdapter Veri_Adaptor;
+        //DataSet Veri_Set;
         OleDbCommand Veri_Komutu;
         OleDbDataReader Veri_Oku;
         public static int id = 0;
@@ -54,13 +54,18 @@ namespace Sinema_Bilet_Satis_Otomasyonu
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "serhat" && textBox2.Text == "123")
+            if (textBox1.Text == "serhat" && textBox2.Text == "1234")
             {
                 YoneticiEkrani ye = new YoneticiEkrani();
                 ye.Show();
             }
             else
                 MessageBox.Show("Email veya şifre hatalı");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

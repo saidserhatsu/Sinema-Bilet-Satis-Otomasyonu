@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.8.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.8.3\lib\net40\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +50,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BiletSatisEkrani.cs">
@@ -58,6 +65,12 @@
     <Compile Include="GirisEkrani.Designer.cs">
       <DependentUpon>GirisEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro.Designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </Compile>
     <Compile Include="KayitEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +79,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SeansEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,24 +102,24 @@
     <EmbeddedResource Include="GirisEkrani.resx">
       <DependentUpon>GirisEkrani.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KayitEkrani.resx">
       <DependentUpon>KayitEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="SeansEkrani.resx">
       <DependentUpon>SeansEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YoneticiEkrani.resx">
       <DependentUpon>YoneticiEkrani.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -114,6 +132,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinema.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

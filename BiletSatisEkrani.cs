@@ -52,7 +52,7 @@ namespace Sinema_Bilet_Satis_Otomasyonu
                 if (c is RadioButton && ((RadioButton)c).Enabled == false)
                 {
                     ((RadioButton)c).Checked = false;
-                    c.BackColor = Color.White;
+                    c.BackColor = Color.FromArgb(162, 162, 224);
                     c.Enabled = true;
                 }
             } 
@@ -107,20 +107,30 @@ namespace Sinema_Bilet_Satis_Otomasyonu
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ıconButton1_Click(object sender, EventArgs e)
+        {
             Veri_Komutu = new OleDbCommand();
             Veritabani_Baglanti.Open();
 
             Veri_Komutu.Connection = Veritabani_Baglanti;
             Veri_Komutu.CommandText = "Insert into SatisBilgileri(koltukno,filmadi,tarih,kullaniciid,ucret,filmid) " +
-                "values (" + "'" + Convert.ToInt32(label3.Text) + "','" + label5.Text + "','" + tarih + "','" + kullaniciid + "','"+ ucret + "','" + filmid + "')";
-            
+                "values (" + "'" + Convert.ToInt32(label3.Text) + "','" + label5.Text + "','" + tarih + "','" + kullaniciid + "','" + ucret + "','" + filmid + "')";
+
             Veri_Komutu.ExecuteNonQuery();
 
             Veritabani_Baglanti.Close();
             DoluKoltuk();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ıconButton2_Click(object sender, EventArgs e)
         {
             Veri_Komutu = new OleDbCommand();
             Veritabani_Baglanti.Open();

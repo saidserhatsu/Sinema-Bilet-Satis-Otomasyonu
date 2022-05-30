@@ -21,22 +21,18 @@ namespace Sinema_Bilet_Satis_Otomasyonu
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ıconButton1_Click(object sender, EventArgs e)
         {
             Veri_Komutu = new OleDbCommand();
             Veritabani_Baglanti.Open();
-            
+
             Veri_Komutu.Connection = Veritabani_Baglanti;
-            Veri_Komutu.CommandText = "Insert into Kullanicilar(ad,soyad,email,sifre) values (" +"'"+ textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text +"')";
-            
+            Veri_Komutu.CommandText = "Insert into Kullanicilar(ad,soyad,email,sifre) values (" + "'" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "')";
+
             Veri_Komutu.ExecuteNonQuery();
-            
+
             Veritabani_Baglanti.Close();
-        }
-
-        private void KayitEkrani_Load(object sender, EventArgs e)
-        {
-
+            MessageBox.Show("Kayıt başarılı");
         }
     }
 }

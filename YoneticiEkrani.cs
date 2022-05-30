@@ -50,7 +50,13 @@ namespace Sinema_Bilet_Satis_Otomasyonu
             FilmTabloListele();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
+        {
+            SeansEkrani se = new SeansEkrani();
+            se.Show();
+        }
+
+        private void ıconButton1_Click(object sender, EventArgs e)
         {
             Veri_Komutu = new OleDbCommand();
             Veritabani_Baglanti.Open();
@@ -63,7 +69,7 @@ namespace Sinema_Bilet_Satis_Otomasyonu
             FilmTabloListele();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void ıconButton2_Click(object sender, EventArgs e)
         {
             cb = new OleDbCommandBuilder(Veri_Adaptor);
             Veri_Adaptor.Update(tablo);
@@ -71,7 +77,7 @@ namespace Sinema_Bilet_Satis_Otomasyonu
             FilmTabloListele();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void ıconButton3_Click(object sender, EventArgs e)
         {
             Veri_Komutu = new OleDbCommand();
             Veritabani_Baglanti.Open();
@@ -81,12 +87,6 @@ namespace Sinema_Bilet_Satis_Otomasyonu
             Veritabani_Baglanti.Close();
             MessageBox.Show("Silme Başarılı..!");
             FilmTabloListele();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            SeansEkrani se = new SeansEkrani();
-            se.Show();
         }
     }
 }

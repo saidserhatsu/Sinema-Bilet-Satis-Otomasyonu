@@ -33,7 +33,7 @@ namespace Sinema_Bilet_Satis_Otomasyonu
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ıconButton1 = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // textBox1
@@ -76,24 +76,33 @@ namespace Sinema_Bilet_Satis_Otomasyonu
             this.textBox4.TabIndex = 0;
             this.textBox4.Text = "SİFRE";
             // 
-            // button1
+            // ıconButton1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(107, 196);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 35);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "KAYİT OL";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ıconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(162)))), ((int)(((byte)(224)))));
+            this.ıconButton1.FlatAppearance.BorderSize = 0;
+            this.ıconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ıconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.ıconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ıconButton1.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.ıconButton1.IconColor = System.Drawing.Color.Black;
+            this.ıconButton1.IconSize = 25;
+            this.ıconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ıconButton1.Location = new System.Drawing.Point(107, 182);
+            this.ıconButton1.Name = "ıconButton1";
+            this.ıconButton1.Rotation = 0D;
+            this.ıconButton1.Size = new System.Drawing.Size(145, 46);
+            this.ıconButton1.TabIndex = 2;
+            this.ıconButton1.Text = "KAYIT OL";
+            this.ıconButton1.UseVisualStyleBackColor = false;
+            this.ıconButton1.Click += new System.EventHandler(this.ıconButton1_Click);
             // 
             // KayitEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(382, 337);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(217)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(356, 318);
+            this.Controls.Add(this.ıconButton1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -101,7 +110,6 @@ namespace Sinema_Bilet_Satis_Otomasyonu
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "KayitEkrani";
             this.Text = "Kayıt Ol";
-            this.Load += new System.EventHandler(this.KayitEkrani_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,6 +121,6 @@ namespace Sinema_Bilet_Satis_Otomasyonu
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
+        private FontAwesome.Sharp.IconButton ıconButton1;
     }
 }

@@ -29,10 +29,7 @@ namespace Sinema_Bilet_Satis_Otomasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -40,21 +37,13 @@ namespace Sinema_Bilet_Satis_Otomasyonu
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ıconButton1 = new FontAwesome.Sharp.IconButton();
+            this.ıconButton2 = new FontAwesome.Sharp.IconButton();
+            this.ıconButton3 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(749, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 33);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Ekle";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -64,30 +53,6 @@ namespace Sinema_Bilet_Satis_Otomasyonu
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(942, 412);
             this.panel1.TabIndex = 1;
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.Location = new System.Drawing.Point(749, 88);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(161, 34);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Sil";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(749, 51);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(161, 33);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Güncelle";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // dataGridView1
             // 
@@ -158,13 +123,13 @@ namespace Sinema_Bilet_Satis_Otomasyonu
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.ıconButton1);
+            this.panel2.Controls.Add(this.ıconButton2);
+            this.panel2.Controls.Add(this.ıconButton3);
             this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.dateTimePicker1);
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 412);
@@ -172,10 +137,71 @@ namespace Sinema_Bilet_Satis_Otomasyonu
             this.panel2.Size = new System.Drawing.Size(942, 147);
             this.panel2.TabIndex = 2;
             // 
+            // ıconButton1
+            // 
+            this.ıconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(162)))), ((int)(((byte)(224)))));
+            this.ıconButton1.FlatAppearance.BorderSize = 0;
+            this.ıconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ıconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.ıconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ıconButton1.IconChar = FontAwesome.Sharp.IconChar.CheckSquare;
+            this.ıconButton1.IconColor = System.Drawing.Color.Black;
+            this.ıconButton1.IconSize = 25;
+            this.ıconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ıconButton1.Location = new System.Drawing.Point(747, 9);
+            this.ıconButton1.Name = "ıconButton1";
+            this.ıconButton1.Rotation = 0D;
+            this.ıconButton1.Size = new System.Drawing.Size(183, 38);
+            this.ıconButton1.TabIndex = 3;
+            this.ıconButton1.Text = "EKLE";
+            this.ıconButton1.UseVisualStyleBackColor = false;
+            this.ıconButton1.Click += new System.EventHandler(this.ıconButton1_Click);
+            // 
+            // ıconButton2
+            // 
+            this.ıconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(162)))), ((int)(((byte)(224)))));
+            this.ıconButton2.FlatAppearance.BorderSize = 0;
+            this.ıconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ıconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.ıconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ıconButton2.IconChar = FontAwesome.Sharp.IconChar.PenSquare;
+            this.ıconButton2.IconColor = System.Drawing.Color.Black;
+            this.ıconButton2.IconSize = 25;
+            this.ıconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ıconButton2.Location = new System.Drawing.Point(747, 53);
+            this.ıconButton2.Name = "ıconButton2";
+            this.ıconButton2.Rotation = 0D;
+            this.ıconButton2.Size = new System.Drawing.Size(183, 38);
+            this.ıconButton2.TabIndex = 4;
+            this.ıconButton2.Text = "GÜNCELLE";
+            this.ıconButton2.UseVisualStyleBackColor = false;
+            this.ıconButton2.Click += new System.EventHandler(this.ıconButton2_Click);
+            // 
+            // ıconButton3
+            // 
+            this.ıconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(162)))), ((int)(((byte)(224)))));
+            this.ıconButton3.FlatAppearance.BorderSize = 0;
+            this.ıconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ıconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.ıconButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ıconButton3.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.ıconButton3.IconColor = System.Drawing.Color.Black;
+            this.ıconButton3.IconSize = 25;
+            this.ıconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ıconButton3.Location = new System.Drawing.Point(747, 97);
+            this.ıconButton3.Name = "ıconButton3";
+            this.ıconButton3.Rotation = 0D;
+            this.ıconButton3.Size = new System.Drawing.Size(183, 38);
+            this.ıconButton3.TabIndex = 5;
+            this.ıconButton3.Text = "SİL";
+            this.ıconButton3.UseVisualStyleBackColor = false;
+            this.ıconButton3.Click += new System.EventHandler(this.ıconButton3_Click);
+            // 
             // YoneticiEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(217)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(942, 559);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -192,8 +218,6 @@ namespace Sinema_Bilet_Satis_Otomasyonu
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
@@ -202,8 +226,9 @@ namespace Sinema_Bilet_Satis_Otomasyonu
         private System.Windows.Forms.ComboBox comboBox1;
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel2;
+        private FontAwesome.Sharp.IconButton ıconButton1;
+        private FontAwesome.Sharp.IconButton ıconButton2;
+        private FontAwesome.Sharp.IconButton ıconButton3;
     }
 }
